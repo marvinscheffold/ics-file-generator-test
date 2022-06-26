@@ -4,8 +4,29 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
         <script defer src="./index.ts" type="module"></script>
-        <title>Document</title>
+        <title>ICS File Generator</title>
     </head>
-    <body></body>
+    <body>
+        <form>
+            <label>
+                Titel
+                <input required type="text" placeholder="Event Titel" />
+            </label>
+            <label>
+                Beschreibung
+                <textarea
+                    required
+                    type="text"
+                    placeholder="Event Beschreibung"
+                ></textarea>
+            </label>
+            <label>
+                Datum
+                <input required type="datetime-local" data-date />
+            </label>
+            <button type="submit">Termin speichern</button>
+        </form>
+    </body>
 </html>
